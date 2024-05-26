@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI/t1qEz8NnYp6eJaqJ5NHfG2hT1q0FvrbR/kS00="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Nike</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light pt-4">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./asset/logo.png" width="80" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="" style="border: none; cursor: pointer"
+            ><i class="fa-solid fa-bars" style="color: white"></i
+          ></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <div style="margin-right: 15%">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link menu me-5"
+                  style="color: black"
+                  aria-current="page"
+                  href="#"
+                  >Men</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu me-5" style="color: black" href="#"
+                  >Women</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu me-5" style="color: black" href="#"
+                  >Kids</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu" style="color: black" href="#"
+                  >Customize</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="icon">
+            <a href="" class="me-4"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" style="margin-top: 3rem">
+          <img class="gambar" src="./asset/nike hitam.png" alt="" />
+        </div>
+        <div
+          class="col-lg-6"
+          style="
+            margin-top: 3rem;
+            padding-left: 5rem;
+            font-weight: 700;
+            font-size: 20px;
+          "
+        >
+          <p>Women's Shoe</p>
+          <h1 class="judul">Nike</h1>
+          <p class="des">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto
+            provident nobis deserunt eos nemo cum quas molestiae iste assumenda.
+          </p>
+          <a href="" class="shop">Shop Now</a>
+          <div class="pilih" style="margin-top: 3rem">
+            <p class="satu me-4"><img src="./asset/nike hitam.png" alt="" /></p>
+            <p class="dua me-4"><img src="./asset/nike putih.png" alt="" /></p>
+            <p class="tiga me-4"><img src="./asset/nike biru.png" alt="" /></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".satu").click(function () {
+          $(".gambar").attr("src", "./asset/nike hitam.png");
+        });
+
+        $(".dua").click(function () {
+          $(".gambar").attr("src", "./asset/nike putih.png");
+        });
+        $(".tiga").click(function () {
+          $(".gambar").attr("src", "./asset/nike biru.png");
+        });
+
+        // Tambahkan event klik serupa untuk link lain jika diperlukan
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

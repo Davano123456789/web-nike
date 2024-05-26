@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./asset/bg.png);
+    height: 100vh;
+    width: 100%;
+}
+.icon a{
+    color: black;
+}
+.nav-item a{
+    font-weight: 700;
+}
+h1.judul{
+    font-size: 8rem;
+    font-weight: 700;
+    font-style: italic;
+}
+p.des{
+    font-size: 15px;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+a.shop{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: .2s ease-in-out;
+}
+a.shop:hover{
+    background-color: white;
+    color: black;
+}
+.pilih{
+    display: flex;
+    cursor: pointer;
+}
+.pilih img{
+    width: 80px;
+    transition: .2s ease-in-out;
+}
+.pilih img:hover{
+    transform: translateY(-10px);
+}
